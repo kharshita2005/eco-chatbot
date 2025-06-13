@@ -1,0 +1,39 @@
+# ========================
+# Frontend (React + Vite)
+# ========================
+client/node_modules/
+client/dist/
+
+# ========================
+# Backend (Flask + Python)
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+server/__pycache__/
+server/*.py[cod]
+server/*.pyo
+server/*.pyd
+
+# Virtual environment (in case created)
+venv/
+env/
+
+# SQLite database file
+server/chatbot.db
+
+# ========================
+# General
+# ========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# IDE/editor config files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
