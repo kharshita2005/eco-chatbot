@@ -1,88 +1,119 @@
-# Eco ChatBot 🌱
+# 🌱 Eco Chatbot
 
-An interactive sales chatbot system built for an eco-friendly e-commerce platform. This project enhances the user shopping experience by enabling product exploration and interaction through a smart, conversational chatbot UI. The backend handles product data queries and user authentication securely.
-
----
-
-## 🌟 Objective
-
-To design and implement a user-centric chatbot system that allows customers to browse eco-friendly products, get recommendations, and simulate the shopping process through an intuitive interface.
+An **interactive sales chatbot system** built for an eco-friendly e-commerce platform. This project enhances the user shopping experience by enabling product exploration and smart conversations through a chatbot interface.
 
 ---
 
-## 🚀 Key Features
+## 🎯 Objective
 
-- Interactive chatbot interface with message timestamps
-- User login and session-based authentication using Flask-Session
-- Responsive UI compatible with mobile, tablet, and desktop
-- Backend server using Flask and SQLite for mock inventory
-- 100+ eco-friendly product entries
-- REST API communication between frontend and backend
-- Chat reset and session tracking functionality
-- Clean and modular code with proper error handling
+To design and implement a **user-centric chatbot system** that helps customers:
+- Browse eco-friendly products
+- Get product recommendations
+- Simulate the shopping process
+- Chat through a smooth, interactive UI
+
+---
+
+## 🌟 Key Features
+
+- 💬 Chatbot interface with timestamped messages
+- 🔐 User login with session-based authentication (Flask-Session)
+- 📱 Responsive UI for mobile, tablet, and desktop
+- 🗃 100+ eco-friendly product entries (SQLite-based inventory)
+- 🔁 REST API communication between frontend and backend
+- 🧹 Chat reset and session tracking functionality
+- 💡 Clean, modular code with error handling
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer        | Technology                   |
-|--------------|------------------------------|
-| Frontend     | Vite + React (JavaScript)    |
-| Backend      | Python (Flask Framework)     |
-| Database     | SQLite                       |
-| Auth & State | Flask-Session                |
+| Layer        | Technology                  |
+|--------------|-----------------------------|
+| Frontend     | Vite + React (JavaScript)   |
+| Backend      | Python (Flask Framework)    |
+| Database     | SQLite                      |
+| Auth & State | Flask-Session               |
 
 ---
 
 ## 📁 Folder Structure
 
 eco-chatbot/
-├── client/ # Frontend Vite + React application
-│ ├── public/ # Static assets like index.html
-│ └── src/ # Source code for React app
-│ ├── assets/ # Images, icons, etc.
+├── client/ # Frontend (React + Vite)
+│ ├── public/ # Static files (index.html, etc.)
+│ └── src/
+│ ├── assets/ # Images, CSS
 │ ├── components/ # Reusable UI components
-│ ├── pages/ # Main pages/screens
-│ └── services/ # API calls or helper services
+│ ├── pages/ # Page-level components (Login, Chat)
+│ └── services/ # API and helper functions
 │
-├── server/ # Backend Flask application
-│ ├── chatbot.db
-│ ├── inventory_seed.py
-│ ├── app.py # Flask main app
-│ ├── models.py # SQLite DB models
-| |
-│ └── requirements.txt
+├── server/ # Backend (Flask)
+│ ├── app.py # Main Flask app
+│ ├── models.py # SQLite database models
+│ ├── inventory_seed.py# Seed script for products
+│ └── requirements.txt # Python dependencies
 │
-├── docs/ # Project documentation (optional)
-└── README.md # Project overview
+├── docs/ # Documentation (PPT, Report, Screenshots)
+└── README.md # This file
 
 
 ---
 
-## 🔧 Installation & Run Locally
+## ⚙️ Installation & Running Locally
 
-### 1. Clone the Repository
+### 1️⃣ Clone the Repository
 
-```bash
+
 git clone https://github.com/kharshita2005/eco-chatbot.git
 cd eco-chatbot
+2️⃣ Set up Virtual Environment (Backend)
 
- set up virtual environment 
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-
-Install python dependencies
-pip install -r requirements.txt
-
-
-Run the flask backend
 cd server
-python app.py
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
+pip install -r requirements.txt
+python app.py  # Start Flask server
+3️⃣ Start React Frontend
 
-Start the react frontend
 cd ../client
 npm install
 npm run dev
+Visit http://localhost:5173 to view the chatbot UI.
 
-Visit: http://localhost:5173 to use the app
+🧾 Project Assets
+All documentation is available in the /docs folder:
+
+✅ Project Report (EcoChatbot_Project_Report.docx)
+
+✅ Presentation Slides (EcoChatbot presentation.pdf)
+
+✅ Screenshots of working chatbot
+
+🙌 Final Note
+This chatbot is designed to demonstrate:
+
+Real-world user interaction
+
+Backend integration with session handling
+
+Modular and scalable architecture
+
+UI/UX focused frontend
+
+Made with 💚 for sustainability and innovation.
+
+
+---
+
+
+
+
+
+
+
+
